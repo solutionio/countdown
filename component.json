@@ -1,0 +1,13 @@
+{
+  "name": "Countdown",
+  "description": "A countdown Timer with events",
+  "version": "0.0.1",
+  "keywords": ["countdown"],
+  "dependencies": {
+		"component/underscore": "*",
+		"solutionio/backbone": "*"
+	},
+	"scripts": [
+		"index.js"
+	]
+}

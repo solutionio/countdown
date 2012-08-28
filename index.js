@@ -1,7 +1,7 @@
 
 (function(window) {
   var _ = require("underscore");
-  var Backbone = req0uire("backbone");
+  var Backbone = require("backbone");
 
   var Countdown = function(maxTime) {
     this.maxTime = maxTime;

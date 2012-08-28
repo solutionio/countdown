@@ -1,9 +1,9 @@
 
 (function(window) {
-  var _ = require("component-underscore");
-  var Backbone = require("solutionio-backbone");
+  var _ = require("../component-underscore");
+  var Backbone = require("../solutionio-backbone");
 
-  var Countdownh = function(maxTime) {
+  var Countdown = function(maxTime) {
     this.maxTime = maxTime;
     _.extend(this, Backbone.Events);
   };

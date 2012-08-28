@@ -1,7 +1,7 @@
 
 (function(window) {
-  var _ = require("underscore");
-  var Backbone = require("backbone");
+  var _ = require("../component-underscore");
+  var Backbone = require("../solutionio-backbone");
 
   var Countdown = function(maxTime) {
     this.maxTime = maxTime;

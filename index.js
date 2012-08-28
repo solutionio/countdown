@@ -11,16 +11,13 @@
   Countdown.prototype.start = function() {
     var me = this;
     this.restTime = this.maxTime;
-
     this.interval = window.setInterval(function() {
       me.restTime = me.restTime - 1000;
       me.trigger("tick", me.restTime);
+      if (me.restTime <= 0) {
+        me.stop();
+      }
     }, 1000);
-
-    window.setTimeout(function () {
-      console.log('finished');
-      me.stop();
-    }, this.maxTime);
   };
 
   Countdown.prototype.stop = function() {
@@ -31,6 +28,4 @@
 
   module.exports = Countdown;
 })(window);
-
-
 

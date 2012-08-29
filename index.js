@@ -11,7 +11,8 @@
   Countdown.prototype.start = function() {
     var me = this;
     this.restTime = this.maxTime;
-    this.interval = window.setInterval(function() {
+    me.trigger('start', this.maxTime);
+		this.interval = window.setInterval(function() {
       me.restTime = me.restTime - 1000;
       me.trigger("tick", me.restTime);
       if (me.restTime <= 0) {
